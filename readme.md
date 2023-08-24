@@ -1,80 +1,37 @@
-# Login Dashboard Exercise
+# fizz-buzz
 
-The aim of this exercise is to create a small slice of a typical authenticated section of a website.
+This library was generated with [Vite]().
 
-There are 3 pages to create:
+## Running unit tests
 
-1. Login view - enables the user to see authenticated pages once logged in, this includes:
+Run `npm run test` to execute the unit tests via [Vitest]().
 
-   -  has the ability to login with username and password
-   -  shows an error upon an un-successful login
-   -  redirects to dashboard upon successful login
-   -  adds a token into local storage upon a successful login
+## Running lint
 
-2. Dashboard - shows general info of the user
+Run `npm run lint` to execute the lint via [ESLint](https://eslint.org/).
 
-   -  Shows a top navigation that includes the menu icon and profile icon
-   -  Shows a side-nav for quick links to other authenticated pages
-   -  Shows card of fake data
+## Tags
 
-3. Profile - update user's data
-   -  Has the ability to update the user's name
+#Incremental-Kata
 
-## Goal of exercise
+## About this Kata
 
-To get a solid react structure in place when making these 3 pages using clean functional well tested code that can be re-used.
+> **_This is based on the [Fizz Buzz](https://codingdojo.org/kata/FizzBuzz/) kata_**
 
-## Design
+A program that prints the numbers from 1 to 100 But for multiples of three print “Fizz” instead of the number and for the multiples of five print “Buzz”.
 
-[Figma designs](https://www.figma.com/file/DqXLVFxBsAMGpZaUbwmPRs/login-dashboard?type=design&node-id=0%3A1&mode=design&t=8lgdJ473NMjav0dO-1)
+## Tasks
 
-This link highlights what is expected for this exercise:
+* Write a program that prints the numbers from 1 to 100
+* For numbers that are multiples of 3 print “Fizz” instead of the number
+* For numbers that are multiples of 5 print “Buzz” instead of the number
+* For numbers which are multiples of both 3 and 5 print “FizzBuzz“.
 
--  login screen to fill out
--  login screen to navigate you to the dashboard page
--  dashboard screen to have a top nav bar
--  dashboard screen to have a side-menu / side-nav
--  dashboard screen to say hello to the user's name
--  dashboard screen to have some info displayed to the user in the flex card format
--  profile screen to show a form in which the user can update their own name
+## Before you start
 
-## What is included?
+This kata has the expectation that you will incrementally work on the tasks (one step at a time).
+You have **1 hour** to work on this kata.
 
-[Vite](https://vitejs.dev/guide/why.html) - used to run the project
-[Vitest](https://github.com/vitest-dev/vitest) - used to run the tests for the project
-[Testing Library](https://testing-library.com/docs/react-testing-library/intro/) - used to render the React components in the test
-[Axios](https://axios-http.com/docs/intro) - to retrieve data from API
-[React Query](https://tanstack.com/query/latest/) - declarative way of getting and storing data
+## Tips
 
-## What is not included?
-
-### Navigation
-
-Would recommend either [React Router](https://reactrouter.com/en/main) (most popular) or
-[TenStack Router](https://tanstack.com/router/v1) for navigation and the ability to have client side routing.
-
-### State Management
-
-In addition, there is no State management, but I would recommend one of the following:
-
--  [XState](https://xstate.js.org/) - State machine state management library
--  [Redux](https://react-redux.js.org/) - Classic store for React
--  React Context - a simple non-library version of Redux
-
-## What is prohibited?
-
-Any SSR or additional frameworks on-top of react are prohibited.
-
-## Project Layout
-
-### Layout
-
--  Entry point is useRoutes() which is wrapped with GuestGaurd or AuthGuard
--  From there we decide the layout wrapper which is either Auth (plain) or Dashboard (nav/sidenbar) or Compact
--  The layout wrapper then renders the Page which will get the actual components from Sections (Views)
-
-### Routing
-
--  The definition of the Paths is defined in /src/routes (essentially the base definition of paths)
--  Navigation is defined in /src/layouts/dashboard/navigation.ts
--  Routing links the above definitions and is defined in /src/routes/sections/index.ts
+If you have finished early think about how you could refactor your code
