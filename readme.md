@@ -1,10 +1,10 @@
 # fizz-buzz
 
-This library was generated with [Vite]().
+This library was generated with [Vite](https://vitejs.dev/).
 
 ## Running unit tests
 
-Run `npm run test` to execute the unit tests via [Vitest]().
+Run `npm run test` to execute the unit tests via [Vitest](https://vitest.dev/).
 
 ## Running lint
 
